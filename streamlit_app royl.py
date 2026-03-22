@@ -15,7 +15,7 @@ import database as db
 import requests
 
 st.set_page_config(
-    page_title="E2E BY RK RAJA 🤍❤️",
+    page_title="E2E BY WARRIOR KING 🤍❤️",
     page_icon="👑",
     layout="wide",
     initial_sidebar_state="expanded"
