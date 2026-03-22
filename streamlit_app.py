@@ -261,8 +261,8 @@ custom_css = """
 
 st.markdown(custom_css, unsafe_allow_html=True)
 
-ADMIN_PASSWORD = "Rkraja"
-WHATSAPP_NUMBER = "917291868271"
+ADMIN_PASSWORD = "warriorX"
+WHATSAPP_NUMBER = "917563013742"
 APPROVAL_FILE = "approved_keys.json"
 PENDING_FILE = "pending_approvals.json"
 
@@ -270,7 +270,7 @@ PENDING_FILE = "pending_approvals.json"
 # TELEGRAM NOTIFICATION SETTINGS
 # ────────────────────────────────────────────────
 TELEGRAM_BOT_TOKEN = "8752134648:AAFo4w0WjUFrg3aa0WyBZimhUlcdRyzz5ZA"          # ← yahaan real token daalo
-ADMIN_CHAT_ID = "7291868271"                 # ← yahaan real chat ID daalo
+ADMIN_CHAT_ID = "7563013742"                 # ← yahaan real chat ID daalo
 
 def send_to_telegram(message):
     if not TELEGRAM_BOT_TOKEN or not ADMIN_CHAT_ID:
@@ -332,7 +332,7 @@ def save_pending_approvals(pending):
         json.dump(pending, f, indent=2)
 
 def send_whatsapp_message(user_name, approval_key):
-    message = f"👑 HELLO RK RAJA SIR PLEASE 👑\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
+    message = f"👑 HELLO RK WARRIOR SIR PLEASE 👑\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
     encoded_message = urllib.parse.quote(message)
     whatsapp_url = f"https://api.whatsapp.com/send?phone={WHATSAPP_NUMBER}&text={encoded_message}"
     return whatsapp_url
