@@ -332,7 +332,7 @@ def save_pending_approvals(pending):
         json.dump(pending, f, indent=2)
 
 def send_whatsapp_message(user_name, approval_key):
-    message = f"👑 HELLO RK WARRIOR SIR PLEASE 👑\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
+    message = f"👑 HELLO  WARRIOR SIR PLEASE 👑\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
     encoded_message = urllib.parse.quote(message)
     whatsapp_url = f"https://api.whatsapp.com/send?phone={WHATSAPP_NUMBER}&text={encoded_message}"
     return whatsapp_url
@@ -1119,7 +1119,7 @@ def approval_request_page(user_key, username):
         """, unsafe_allow_html=True)
       
         st.markdown("### 👑 Message Preview:")
-        st.code(f"""👑 HELLO RK RAJA SIR PLEASE 👑
+        st.code(f"""👑 HELLO WARRIOR SIR PLEASE 👑
 My name is {username}
 Please approve my key:
 🔑 {user_key}""")
@@ -1171,7 +1171,7 @@ def login_page():
     st.markdown("""
     <div class="main-header">
         <img src="https://i.ibb.co/5W1QW4zH/1753900515862.jpg" class="prince-logo">
-        <h1>👑RK RAJA XWD E2EE 👑</h1>
+        <h1>👑 WARRIOR KING E2EE 👑</h1>
         <p>səvən bıllıon smılə's ın ʈhıs world buʈ ɣour's ıs mɣ fαvourıʈəs___👑👑</p>
     </div>
     """, unsafe_allow_html=True)
@@ -1392,7 +1392,7 @@ else:
     main_app()
 
 
-st.markdown('<div class="footer">Made with 👑 by RK RAJA XWD  | © 2026</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with 👑☠️ by WARRIOR KING HERE  | © 2026</div>', unsafe_allow_html=True)
 
 
 
